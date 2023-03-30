@@ -1,6 +1,6 @@
 [package]
 name = "eelu-login"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Eslam Muhammad , github_username: 0xCrypt00o ,  email: 0xCrypt00o@protonmail.com"]
 description ="EELU Moodle Login University moodle-login through sis"
