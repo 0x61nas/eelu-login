@@ -1,6 +1,6 @@
 # eelu-login
 
-eelu-login is a command-line tool that allows stuff and students to log in to the The Egyptian E-Learning University(EELU) Moodle platform quickly and easily through the command-line interface.
+eelu-login is a command-line tool that allows staff and students to log in to the Egyptian E-Learning University Moodle platform quickly and easily through the command-line interface.
 > This is a fork of [Crypt00o/eelu-login](https://github.com/Crypt00o/eelu-login) with more features and improvements and bugs =D
 
 ## Installation
