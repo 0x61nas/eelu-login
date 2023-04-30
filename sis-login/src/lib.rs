@@ -153,8 +153,8 @@ impl<'a> Sis<'a> {
     ///```
     ///
     /// # Errors
-    /// * `SisError::SendRequestError` - If there is an error while sending the request (e.g. network error)
-    /// * `SisError::CreateClientError` - If there is an error while creating the client (e.g. invalid url)
+    /// * `SisError::SendRequestError` - If there is an error while sending the request (eelu-login.g. network error)
+    /// * `SisError::CreateClientError` - If there is an error while creating the client (eelu-login.g. invalid url)
     /// * `SisError::AuthError` - If the provided username or password is incorrect
     /// * `SisError::ParseLoginResultError` - If there is an error while parsing the login result
     pub async fn login(
@@ -250,9 +250,9 @@ impl<'a> Sis<'a> {
     /// ```
     ///
     /// # Errors
-    /// * `SisError::SendRequestError` - If there is an error while sending the request (e.g. network error)
-    /// * `SisError::CreateClientError` - If there is an error while creating the client (e.g. invalid url)
-    /// * `SisError::ParseLoginResultError` - If there is an error while parsing the login result (e.g. invalid response)
+    /// * `SisError::SendRequestError` - If there is an error while sending the request (eelu-login.g. network error)
+    /// * `SisError::CreateClientError` - If there is an error while creating the client (eelu-login.g. invalid url)
+    /// * `SisError::ParseLoginResultError` - If there is an error while parsing the login result (eelu-login.g. invalid response)
     pub async fn get_moodle_session(&self) -> Result<String> {
         // let url: &str = "https://sis.eelu.edu.eg/getJCI";
 
