@@ -131,17 +131,3 @@ pub fn prompt(param_name: &str, empty_input_err: bool) -> String {
         };
     }
 }
-
-#[inline(always)]
-pub fn banner() {
-    println!(
-        r#"
-0xCrypt00o Moodle Login - Tool for Getting Moodle Session Quickly and Login Through CLI
-
-    Created By : Eslam Muhammad [0xCrypt00o]
-    Github Repo : https://github.com/Crypt00o/eelu-login
-    Mail : 0xCrypt00o@protonmail.com
-    Support Me On :
-        Bitcoin Address : bc1qdp3f6u3puwkyu6ztxz7hzcurd7jnjyw6hzjcas"#
-    );
-}

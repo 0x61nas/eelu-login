@@ -62,11 +62,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Parse Arguments
     let mut args = cli::arg_parser::Arguments::parse_args_and_env();
 
-    // Print the banner if the verbose flag is set
-    if args.verbose {
-        cli_session::banner();
-    }
-
     // Check the user entered the username and password, if not, prompt the user to enter them
     if args.username.is_none() {
         args.username = cli_session::prompt("Username", true).into();
