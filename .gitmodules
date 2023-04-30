@@ -1,0 +1,3 @@
+[submodule "archpackage/eelu-login/eelu-login"]
+	path = archpackage/eelu-login/eelu-login
+	url = ssh://aur@aur.archlinux.org/eelu-login.git
