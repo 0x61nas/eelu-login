@@ -38,7 +38,7 @@ pub async fn login(sis: &mut sis_login::Sis<'_>, args: &mut Arguments) {
                 }
                 _ => {
                     if args.verbose {
-                        println!("[-] Login Faild :(");
+                        println!("[-] Login Failed :(");
                     }
                     if !try_guess_user_type {
                         break;
@@ -62,14 +62,14 @@ pub async fn login(sis: &mut sis_login::Sis<'_>, args: &mut Arguments) {
                     };
                 }
                 if args.verbose {
-                    prompt_enter("\n\nPlease send blessings upon Prophet Muhammad Then Press Enter To Exit\n\n");
+                    prompt_enter("\n\nPress Enter To Exit\n\n");
                 }
 
                 return;
             }
             _ => {
-                if prompt_y_n("[yes/no] => Do You Want to Attemp Login Again ?") {
-                    if prompt_y_n("[yes/no] => Do You Want to Login Useing Same User And Pass ?") {
+                if prompt_y_n("[yes/no] => Do You Want to Attempt Login Again ?") {
+                    if prompt_y_n("[yes/no] => Do You Want to Login Using Same User And Pass ?") {
                         continue;
                     } else {
                         args.username = prompt("Username", true).into();
