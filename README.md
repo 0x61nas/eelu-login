@@ -49,6 +49,14 @@ You can don't need to specify the user, and the tool will be try to login as a s
 ## Contributing
 If you want to contribute to this project, please read the [contributing guidelines](./CONTRIBUTING.md) first.
 
+## Also available on
+* [GitHub](https://github.com/anas-elgarhy/eeu-login) (main repo)
+* [GitLab](https://gitlab.com/anas-elgarhy/eelu-login)
+* [BitBucket](https://bitbucket.org/anas_elgarhy/eelu-login)
+* [Codeberg](https://codeberg.org/anas-elgarhy/eelu-login)
+* [Notabug](https://notabug.org/anas-elgarhy/eelu-login) (not instant updated)
+* [disroot](https://git.disroot.org/anas-elgarhy/eelu-login)
+
 ## Useful Links
 - [sis-login crate](https://crates.io/crates/sis-login)
 - [EELU SIS](https://sis.eelu.edu.eg/)
