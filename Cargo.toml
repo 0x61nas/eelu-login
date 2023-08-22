@@ -1,6 +1,6 @@
 [package]
 name = "eelu-login"
-version = "0.3.0"
+version = "0.3.1"
 edition = "2021"
 authors = ["Eslam Muhammad <0xCrypt00o@protonmail.com>", "Anas Elgarhy <anas.elgarhy.dev@gmail.com>"]
 description = "EELU Moodle Login University moodle-login through sis system"
@@ -23,7 +23,7 @@ exclude = [
 ]
 
 [dependencies]
-sis-login = "0.2"
+sis-login = "0.2.5"
 tokio = "1"
 open = "5"
 
