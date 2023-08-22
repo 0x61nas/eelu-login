@@ -190,7 +190,7 @@ impl<'a> Sis<'a> {
 
         let login_result = match response.json::<LoginResult>().await {
             Ok(result) => result,
-            Err(err) => {
+            Err(_err) => {
                 #[cfg(feature = "debug")]
                 debug!("[-] Error While Parse Login Result : {}", err);
                 return Err(SisError::ParseLoginResultError);

@@ -1,7 +1,6 @@
 use crate::SisError;
 use reqwest::{
-    header::{HeaderMap, HeaderName, HeaderValue, CONTENT_TYPE, COOKIE, REFERER, USER_AGENT},
-    Client, ClientBuilder,
+    header::{HeaderMap}, ClientBuilder,
 };
 
 #[inline(always)]
