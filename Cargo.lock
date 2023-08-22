@@ -46,10 +46,10 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "eelu-login"
-version = "0.3.0"
+version = "0.3.1"
 dependencies = [
  "open",
- "sis-login 0.2.3",
+ "sis-login 0.2.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "tokio",
 ]
 
@@ -597,10 +597,9 @@ dependencies = [
 
 [[package]]
 name = "sis-login"
-version = "0.2.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "82894932b77b4d16b25dfc038923e2872d0efc2c96c81044bc655e0f0ad13e19"
+version = "0.2.5"
 dependencies = [
+ "log",
  "reqwest",
  "rustls 0.21.0",
  "serde",
@@ -609,9 +608,10 @@ dependencies = [
 
 [[package]]
 name = "sis-login"
-version = "0.2.4"
+version = "0.2.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6003cc491a62fe366ced4b597ca7a522c2c029fd9254c6ab3cec5c2d97ddb4a6"
 dependencies = [
- "log",
  "reqwest",
  "rustls 0.21.0",
  "serde",
