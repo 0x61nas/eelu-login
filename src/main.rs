@@ -1,4 +1,10 @@
 //! eelu-login is a command-line tool that allows staff and students to log in to the Egyptian E-Learning University Moodle platform quickly and easily through the command-line interface.
+//!
+//! [![crates.io](https://img.shields.io/crates/v/eelu-login.svg)](https://crates.io/crates/eelu-login)
+//! [![docs.rs](https://docs.rs/eelu-login/badge.svg)](https://docs.rs/eelu-login)
+//! [![downloads](https://img.shields.io/crates/d/eelu-login.svg)](https://crates.io/crates/eelu-login)
+//! [![license](https://img.shields.io/crates/l/eelu-login.svg)](https://github.com/0x61nas/eelu-login/blob/aurora/LICENSE)
+//!
 //! > This is a fork of [Crypt00o/eelu-login](https://github.com/Crypt00o/eelu-login) with more features and improvements and bugs =D
 //!
 //! # Installation
@@ -9,7 +15,7 @@
 //!
 //! Or you can get the latest git version from the repository:
 //! ```sh
-//! cargo install --git https://github.com/anas-elgarhy/eelu-login.git
+//! cargo install --git https://github.com/0x61nas/eelu-login.git
 //! ```
 //!
 //! Or you can install it from the AUR with your favorite AUR helper:
@@ -43,6 +49,10 @@
 //! If you don't want to enter your credentials every time you run the tool, you can set the `SIS_EELU_USERNAME` and `SIS_EELU_PASSWORD` environment variables to your username and password respectively.
 //!
 //! You can don't need to specify the user, and the tool will be try to login as a student and if it fails it will try to login as a staff and if it fails it will try to login as a system user.
+//!
+//! # Dependency graph
+//! genetated with [cargo-depgraph](https://crates.io/crates/cargo-depgraph)
+//! ![eelu-locin crate deps graph](./deps-graph.png)
 //!
 //! # Contributing
 //! If you want to contribute to this project, please read the [contributing guidelines](./CONTRIBUTING.md) first.
