@@ -98,7 +98,7 @@ pub fn prompt_y_n(msg: &str) -> bool {
 pub fn prompt_enter(msg: &str) {
     print!("{} ", msg);
     stdout().flush().unwrap();
-    stdin().read_line(&mut String::new());
+    let _ = stdin().read_line(&mut String::new());
 }
 
 #[inline]

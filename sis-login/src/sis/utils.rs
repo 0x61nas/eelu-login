@@ -1,7 +1,5 @@
 use crate::SisError;
-use reqwest::{
-    header::{HeaderMap}, ClientBuilder,
-};
+use reqwest::{header::HeaderMap, ClientBuilder};
 
 #[inline(always)]
 pub(crate) async fn send_request(

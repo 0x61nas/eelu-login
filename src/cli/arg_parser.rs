@@ -48,37 +48,32 @@ usertype can be :
     #[inline(always)]
     fn parse_args(&mut self) {
         let mut cli_args: Args = args();
-        let mut index: Option<String> = cli_args.next();
+        let _ = cli_args.next(); // Skip the command name
 
-        loop {
-            index = cli_args.next();
-            if index.is_some() {
-                match index.as_ref().unwrap().as_str() {
-                    "--user" | "-username" | "--username" | "-user" | "-u" => {
-                        self.username = cli_args.next()
-                    }
-                    "--password" | "-password" | "--pass" | "-pass" | "-p" => {
-                        self.password = cli_args.next()
-                    }
-                    "--usertype" | "-usertype" | "--type" | "-type" | "-t" => {
-                        if let Some(user_type) = cli_args.next() {
-                            self.user_type = Some(UserType::from_string(&user_type));
-                        }
-                    }
-                    "-o" | "-open" | "--open" => self.open_browser = true,
-                    "-v" | "-verbose" | "--verbose" => self.verbose = true,
-                    "-V" | "-version" | "--version" => {
-                        println!("eelu-login v{}", env!("CARGO_PKG_VERSION"));
-                        exit(0)
-                    }
-                    "-h" | "-help" | "--help" => {
-                        Self::usage();
-                        exit(0)
-                    }
-                    _ => println!("Invalid Argument : {}", index.unwrap()),
+        while let Some(arg) = cli_args.next() {
+            match arg.as_str() {
+                "--user" | "-username" | "--username" | "-user" | "-u" => {
+                    self.username = cli_args.next()
                 }
-            } else {
-                break;
+                "--password" | "-password" | "--pass" | "-pass" | "-p" => {
+                    self.password = cli_args.next()
+                }
+                "--usertype" | "-usertype" | "--type" | "-type" | "-t" => {
+                    if let Some(user_type) = cli_args.next() {
+                        self.user_type = Some(UserType::from_string(&user_type));
+                    }
+                }
+                "-o" | "-open" | "--open" => self.open_browser = true,
+                "-v" | "-verbose" | "--verbose" => self.verbose = true,
+                "-V" | "-version" | "--version" => {
+                    println!("eelu-login v{}", env!("CARGO_PKG_VERSION"));
+                    exit(0)
+                }
+                "-h" | "-help" | "--help" => {
+                    Self::usage();
+                    exit(0)
+                }
+                _ => println!("Invalid Argument : {arg}"),
             }
         }
     }

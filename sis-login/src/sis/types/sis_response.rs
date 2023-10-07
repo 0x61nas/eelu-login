@@ -1,5 +1,3 @@
-
-
 #[derive(serde::Deserialize)]
 #[cfg_attr(feature = "debug", derive(Debug))]
 pub(crate) struct LoginResult {
