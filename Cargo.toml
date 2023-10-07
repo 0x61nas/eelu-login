@@ -23,7 +23,7 @@ exclude = [
 ]
 
 [dependencies]
-sis-login = "0.2.6"
+sis-login = "0.2.7"
 tokio = "1"
 open = "5"
 
